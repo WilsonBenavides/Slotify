@@ -4,6 +4,10 @@
 	<title>Welcome to Slotify!</title>
 </head>
 <body>
-	<h1>This is the register page</h1>
+	<div id="inputContainer">
+		<form id="loginForm" action="register.php" method="POST">
+			<h2>Login to your Account</h2>
+		</form>
+	</div>
 </body>
 </html>

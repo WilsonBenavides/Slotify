@@ -1,0 +1,1 @@
+v01 xampp install, create folder on htdocs Slotify

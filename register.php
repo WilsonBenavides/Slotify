@@ -2,11 +2,12 @@
 
 	if(isset($_POST['loginButton'])) {
 		//login button was pressed
-	}
+	} 
 
 	if(isset($_POST['registerButton'])) {
 		//register button was pressed
-		
+		$username = $_POST['username'];
+		echo $username;
 	}
 ?>
 

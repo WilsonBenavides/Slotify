@@ -13,7 +13,7 @@
 			</p>
 			<p>
 				<label for="loginPassword">Password</label>
-				<input id="loginPassword" name="loginPassword" type="password" required>
+				<input id="loginPassword" name="loginPassword" type="password" placeholder="Your Password" required>
 			</p>
 
 			<button type="submit" name="loginButton">LOG IN</button>
@@ -43,11 +43,11 @@
 			</p>			
 			<p>
 				<label for="password">Password</label>
-				<input id="password" name="password" type="password" required>
+				<input id="password" name="password" type="password" placeholder="Your Password" required>
 			</p>
 			<p>
 				<label for="password2">Confirm password</label>
-				<input id="password2" name="password2" type="password" required>
+				<input id="password2" name="password2" type="password" placeholder="Your Password" required>
 			</p>
 
 			<button type="submit" name="registerButton">SIGN UP</button>

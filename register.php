@@ -1,7 +1,12 @@
 <?php
 
 	if(isset($_POST['loginButton'])) {
-		echo "login button was pressed";
+		//login button was pressed
+	}
+
+	if(isset($_POST['registerButton'])) {
+		//register button was pressed
+		
 	}
 ?>
 

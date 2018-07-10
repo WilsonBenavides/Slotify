@@ -1,5 +1,7 @@
 <?php
 	class Account {
+
+
 		public function __construct() {
 
 		}
@@ -25,11 +27,13 @@
 		}
 
 		private function validateEmails($em, $em2) {
-
+			
 		}
 
 		private function validatePasswords($pw, $pw2) {
-
+			
 		}
+
+
 	}
 ?>

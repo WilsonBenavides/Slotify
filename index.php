@@ -20,10 +20,16 @@ else {
 </head>
 
 <body>
+	
 
 	<div id="nowPlayingBarContainer">
-		
+
+		<div id="nowPlayingBar">
+
+		</div>
+
 	</div>
+
 
 </body>
 

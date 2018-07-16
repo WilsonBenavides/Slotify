@@ -61,6 +61,16 @@ else {
 						</button>
 
 					</div>
+
+					<div class="playbackBar">
+						
+						<span class="progressTime current">0.00</span>
+
+						<div class="progressBar"></div>
+
+						<span class="progressTime current">0.00</span>
+
+					</div>
 					
 				</div>
 				

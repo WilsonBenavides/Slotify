@@ -27,7 +27,7 @@ else {
 		<div id="nowPlayingBar">
 
 			<div id="nowPlayingLeft">
-				
+
 			</div>
 
 			<div id="nowPlayingCenter">
@@ -35,7 +35,7 @@ else {
 				<div class="content playerControls">
 
 					<div class="buttons">
-						
+
 						<button class="controlButton shuffle" title="Shuffle button">
 							<img src="assets/images/icons/shuffle.png" alt="Shuffle">
 						</button>
@@ -62,23 +62,34 @@ else {
 
 					</div>
 
+
 					<div class="playbackBar">
-						
-						<span class="progressTime current">0.00</span>
-
-						<div class="progressBar"></div>
 
 						<span class="progressTime current">0.00</span>
+
+						<div class="progressBar">
+							<div class="progressBarBg">
+								<div class="progress"></div>
+							</div>
+						</div>
+
+						<span class="progressTime remaining">0.00</span>
+
 
 					</div>
-					
+
+
 				</div>
-				
+
+
 			</div>
 
 			<div id="nowPlayingRight">
-				
+
 			</div>
+
+
+
 
 		</div>
 

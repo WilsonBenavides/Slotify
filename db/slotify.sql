@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 17-07-2018 a las 18:27:34
+-- Tiempo de generación: 17-07-2018 a las 19:29:14
 -- Versión del servidor: 10.1.31-MariaDB
 -- Versión de PHP: 7.2.4
 
@@ -111,6 +111,13 @@ CREATE TABLE `songs` (
   `plays` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
+--
+-- Volcado de datos para la tabla `songs`
+--
+
+INSERT INTO `songs` (`id`, `title`, `artist`, `album`, `genre`, `duration`, `path`, `albumOrder`, `plays`) VALUES
+(1, 'Acoustic Breze', 1, 1, 8, '2:37', 'assets/music/bensound-acousticbreeze.mp3', 1, 0);
+
 -- --------------------------------------------------------
 
 --
@@ -199,7 +206,7 @@ ALTER TABLE `genre`
 -- AUTO_INCREMENT de la tabla `songs`
 --
 ALTER TABLE `songs`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 
 --
 -- AUTO_INCREMENT de la tabla `users`

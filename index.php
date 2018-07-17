@@ -25,6 +25,10 @@ else {
 
 		<div id="topContainer">
 
+			<div id="navBarContainer">
+				
+			</div>
+
 		</div>
 
 

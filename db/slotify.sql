@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 17-07-2018 a las 18:06:30
+-- Tiempo de generación: 17-07-2018 a las 18:27:34
 -- Versión del servidor: 10.1.31-MariaDB
 -- Versión de PHP: 7.2.4
 
@@ -36,6 +36,14 @@ CREATE TABLE `albums` (
   `artworkPath` varchar(500) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
+--
+-- Volcado de datos para la tabla `albums`
+--
+
+INSERT INTO `albums` (`id`, `title`, `artist`, `genre`, `artworkPath`) VALUES
+(1, 'Bacon and eggs', 2, 4, 'assets/images/artwork/clearday.jpg'),
+(2, 'Pizza head', 5, 10, 'assets/images/artwork/energy.jpg');
+
 -- --------------------------------------------------------
 
 --
@@ -47,6 +55,17 @@ CREATE TABLE `artists` (
   `name` varchar(50) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
+--
+-- Volcado de datos para la tabla `artists`
+--
+
+INSERT INTO `artists` (`id`, `name`) VALUES
+(1, 'Mickey Mouse'),
+(2, 'Goofy'),
+(3, 'Bart Simpson'),
+(4, 'Homer'),
+(5, 'Bruce Lee');
+
 -- --------------------------------------------------------
 
 --
@@ -57,6 +76,22 @@ CREATE TABLE `genre` (
   `id` int(11) NOT NULL,
   `name` varchar(50) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Volcado de datos para la tabla `genre`
+--
+
+INSERT INTO `genre` (`id`, `name`) VALUES
+(1, 'Rock'),
+(2, 'Pop'),
+(3, 'Hip-Hop'),
+(4, 'Rap'),
+(5, 'R & B'),
+(6, 'Classical'),
+(7, 'Techno'),
+(8, 'Jazz'),
+(9, 'Folk'),
+(10, 'Country');
 
 -- --------------------------------------------------------
 
@@ -146,19 +181,19 @@ ALTER TABLE `users`
 -- AUTO_INCREMENT de la tabla `albums`
 --
 ALTER TABLE `albums`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 
 --
 -- AUTO_INCREMENT de la tabla `artists`
 --
 ALTER TABLE `artists`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
 
 --
 -- AUTO_INCREMENT de la tabla `genre`
 --
 ALTER TABLE `genre`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
 
 --
 -- AUTO_INCREMENT de la tabla `songs`

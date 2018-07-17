@@ -1,3 +1,5 @@
 v01 xampp install, create folder on htdocs Slotify
 ep 16 - Creating the users table
 	in xampp create database slotify, and create table with 8 columns -> id, username, firstName, lastName, email, password, signUpDate, profilePic
+
+ep  57 - in slotify database create new table "Songs" -> id, title(varchar, 250), artist(INT), album(INT), genre(INT), duration(VARCHAR, 8), path(VARCHAR, 500), albumOrder(INT), plays(INT)

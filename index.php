@@ -5,7 +5,7 @@
 <div class="gridViewContainer">
 	
 	<?php
-		$albumQuery = mysqli_query($con, "SELECT * FROM albums");
+		$albumQuery = mysqli_query($con, "SELECT * FROM albums ORDER BY RAND()");
 
 		while($row = mysqli_fetch_array($albumQuery)) {
 			echo $row['title'] . "<br>";

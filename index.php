@@ -8,7 +8,7 @@
 		$albumQuery = mysqli_query($con, "SELECT * FROM albums");
 
 		while($row = mysqli_fetch_array($albumQuery)) {
-			echo $row['title'];
+			echo $row['title'] . "<br>";
 		}
 	?>
 

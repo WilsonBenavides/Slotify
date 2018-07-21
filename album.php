@@ -35,7 +35,11 @@ $artist = $album->getArtist();
 		$songIdArray = $album->getSongIds();
 
 		foreach($songIdArray as $songId) {
-			echo $songId . "<br>";
+
+			$albumSong = new Song($con, $songId);
+
+			echo $albumSong->getTitle();
+
 		}
 
 		?>

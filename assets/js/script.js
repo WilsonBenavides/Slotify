@@ -11,6 +11,10 @@ function formatTime(seconds) {
 	return minutes + ":" + extraZero + seconds;
 }
 
+function updateTimeProgressBar(audio) {
+	$(".progressTime.current").text(formatTime(audio.currentTime));
+}
+
 function Audio() {
 
 	this.currentlyPlaying;
@@ -22,6 +26,11 @@ function Audio() {
 		$(".progressTime.remaining").text(duration);
 	});
 
+	this.audio.addEventListener("timeupdate", function() {
+		if(this.duration) {
+			updateTimeProgressBar(this);
+		}
+	});
 
 	this.setTrack = function(track) {
 		this.currentlyPlaying = track;

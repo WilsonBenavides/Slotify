@@ -1,9 +1,10 @@
 var currentPlaylist = [];
 var audioElement;
 
+
 function formatTime(seconds) {
 	var time = Math.round(seconds);
-	var minutes = Math.floor(time / 60); //rounds down
+	var minutes = Math.floor(time / 60); //Rounds down
 	var seconds = time - (minutes * 60);
 
 	var extraZero = (seconds < 10) ? "0" : "";
@@ -13,6 +14,10 @@ function formatTime(seconds) {
 
 function updateTimeProgressBar(audio) {
 	$(".progressTime.current").text(formatTime(audio.currentTime));
+	$(".progressTime.remaining").text(formatTime(audio.duration - audio.currentTime));
+
+	var progress = audio.currentTime / audio.duration * 100;
+	$(".playbackBar .progress").css("width", progress + "%");
 }
 
 function Audio() {
@@ -26,7 +31,7 @@ function Audio() {
 		$(".progressTime.remaining").text(duration);
 	});
 
-	this.audio.addEventListener("timeupdate", function() {
+	this.audio.addEventListener("timeupdate", function(){
 		if(this.duration) {
 			updateTimeProgressBar(this);
 		}
